@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/for_css/whoareyou.css">
+    <title>who are you</title>
+
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+<body>
+
+    
+    <nav>
+        <div class="containernav">
+            <ul class="sidebar">
+                <li onclick=closeSidebar()>
+                    <a href="index.html"><i class="bi bi-x-lg"></i></a>
+                </li>
+                <li>
+                    <a href="index.html">หน้าหลัก</a>
+                </li>
+                <li>
+                    <a href="whoareyou.html">ทายนิสัย</a>
+                </li>
+                <li>
+                    <a href="#">อนิเมะ</a>
+                </li>
+                <li>
+                    <a href="#">มาแรง</a>
+                </li>
+                <li>
+                    <a href="#">contact</a>
+                </li>
+                <li>
+                    <a href="logout.php"></a>
+                </li>
+
+
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="index.html">WELCOME</a>
+                </li>
+                <li class="hideOnMoblie">
+                    <a href="index.html">หน้าหลัก</a>
+                </li>
+                <li class="hideOnMoblie">
+                    <a href="whoareyou.html">ทายนิสัย</a>
+                </li>
+                <li class="hideOnMoblie">
+                    <a href="#">อนิเมะ</a>
+                </li>
+                <li class="hideOnMoblie">
+                    <a href="#">มาแรง</a>
+                </li>
+                <li class="hideOnMoblie">
+                    <a href="#">contact</a>
+                </li>
+                <li class="hideOnMoblie">
+                    <a href="#"></a>
+                </li>
+                <li class="menu-button" onclick=showSidebar()>
+                    <a href="#"><i class="bi bi-list"></i></a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+    
+    <div class="foryou">
+        <div class="header">
+            <h1>Tokyo Revenger</h1>
+            <h2>นิสัยของคุณ จะเหมือนใครในเรื่อง Tokyo renverger</h2>
+            <span>หากคุณต้องการที่จะรู้คำตอบแล้ว กดปุ่มเริ่มที่ด้านล่างได้เลย</span>
+        </div>
+
+        <div class="btnstart">
+            <a href="other-page.html" class="btn btn-primary">เริ่ม</a>
+        </div>
+
+        <div class="poster-container">
+            <div class="poster">
+                <img src="photo/poster1.jpg" alt="Poster 1">
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <!--==================================navigation bar script ======================================-->
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function closeSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <!--=================================================================================-->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
